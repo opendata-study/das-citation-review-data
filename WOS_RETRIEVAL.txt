@@ -1,0 +1,6 @@
+Web of Science Core Collection citation counts (Times Cited) are not included in this deposit (Clarivate licence).
+They were obtained by DOI (wos_doi_list.csv) in the WoS Core Collection and joined to the articles by DOI; the column used in the analyses is wos_TC.
+To reproduce the citation models, retrieve the counts under your own licence, join them by DOI to articles_public_data (columns wos_matched, wos_TC, wos_notice_type as in analyze_citation_review), and run the script with --csv on the joined table.
+Articles flagged in WoS as retractions or expressions of concern were excluded from the analyses reported in the paper (wos_notice_type); this flag is not part of the deposit.
+
+The query used is given in wos_query.txt.

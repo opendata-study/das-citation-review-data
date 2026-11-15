@@ -1,0 +1,11 @@
+Web of Science retrieval of Times Cited counts
+
+Source: Web of Science Core Collection, retrieved in June 2026.
+Indexes searched: A&HCI, BKCI-SSH, BKCI-S, CCR-EXPANDED, ESCI, IC, CPCI-SSH, CPCI-S, SCI-EXPANDED, SSCI.
+Search: by DOI, in the Advanced Search field tag DO. The DOIs of the articles (wos_doi_list.csv) were joined with "or" and submitted in batches
+(one query contained 4,000 DOIs), in the following form:
+
+  DO=(10.xxxx/xxxx or 10.xxxx/xxxx or 10.xxxx/xxxx or ... or 10.xxxx/xxxx)
+
+Exported field of interest: Times Cited (Web of Science Core Collection; TC in the tab-delimited export). Records were joined to the articles by DOI.
+The Web of Science records and counts are not part of this deposit (Clarivate licence).

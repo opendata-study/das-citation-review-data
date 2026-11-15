@@ -1,0 +1,11 @@
+﻿journal,group,n,accuracy
+Heliyon,heliyon,120,0.9666666666666667
+IntJEnvironResPublicHealth,mdpi6,120,0.9083333333333333
+IntJMolSci,mdpi6,120,0.9666666666666667
+JClinMed,mdpi6,120,0.9166666666666666
+MaterialsBasel,mdpi6,120,0.9666666666666667
+Molecules,mdpi6,120,0.9583333333333334
+NatCommun,big3,120,0.8916666666666667
+PLoSOne,big3,120,0.925
+SciRep,big3,120,0.925
+SensorsBasel,mdpi6,120,0.95

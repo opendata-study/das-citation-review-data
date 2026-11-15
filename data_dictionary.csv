@@ -1,0 +1,64 @@
+column,source,description
+PMCID,PMC,Article identifier
+DOI,PMC,Article identifier
+journal_key,PMC,Journal (journal key as in the source table)
+pub_year,PMC,Publication year
+article_type,PMC,Article type (research_article)
+das_has_label,Classifier,1 if the article has a DAS label
+das_label,Classifier,"DAS category assigned by the Random Forest stacking ensemble (F, M, P, R, C, A, N); the label used in the analyses"
+das_ds32,Classifier,DAS label by DeepSeek-V3.2
+das_gpt5,Classifier,DAS label by GPT-5.4
+das_mil3,Classifier,DAS label by Mistral-Large-3
+das_llm_agree,Classifier,1 if the three LLM labels are identical
+n_authors,PMC full-text XML,Number of authors
+n_collab,PMC full-text XML,Consortium (collaboration) authors; the analysis uses n_collab > 0
+n_corresp,PMC full-text XML,Number of corresponding authors
+equal_contrib_any,PMC full-text XML,1 if an equal-contribution note is present
+n_orcid,PMC full-text XML,Number of authors with an ORCID
+pmc_n_countries_u,PMC full-text XML,"Number of countries in the author affiliations (UK nations merged, territories merged)"
+n_institutions_ror,PMC full-text XML,Number of institutions (ROR)
+n_refs,PMC full-text XML,Number of references
+ref_age_median,PMC full-text XML,Median age of the references
+n_refs_data,PMC full-text XML,Data citations in the references; the analysis uses n_refs_data > 0
+has_funding_positive,PMC full-text XML,1 if a funding statement is present
+body_words,PMC full-text XML,Words in the article body
+n_figures,PMC full-text XML,Number of figures
+n_tables,PMC full-text XML,Number of tables
+n_equations,PMC full-text XML,Number of equations
+n_supplementary,PMC full-text XML,Number of supplementary files
+abstract_words,PMC full-text XML,Words in the abstract
+title_words_adj,PMC full-text XML,"Words in the title, counted from the PMC title (articles whose adjusted title length in the analysis was taken from the Web of Science title carry the PMC count instead)"
+title_has_colon,PMC full-text XML,1 if the title contains a colon
+title_has_question,PMC full-text XML,1 if the title is a question
+has_body,PMC full-text XML,1 if the article body is available (body-derived counts are missing otherwise)
+corr_country_u,PMC full-text XML,Country of the corresponding author
+corr_country_status,PMC full-text XML,How the corresponding-author country was assigned
+days_received_to_accepted,PMC article history,Days from receipt to acceptance (peer review duration)
+pmc_citedby_n,PMC cited-by,Number of PMC articles citing the article
+cb_fetched,PMC cited-by,1 if the PMC cited-by count was retrieved
+oa_topic,OpenAlex,Primary topic
+oa_subfield,OpenAlex,Subfield of the primary topic
+oa_field,OpenAlex,Field of the primary topic
+oa_domain,OpenAlex,Domain of the primary topic
+oa_topic_score,OpenAlex,Score of the primary topic
+oa_found,OpenAlex,1 if the DOI was found in OpenAlex
+oa_pubyear,OpenAlex,Publication year in OpenAlex
+oa_pubdate,OpenAlex,Publication date in OpenAlex
+oa_cited_total,OpenAlex,"cited_by_count in OpenAlex (all years, at retrieval)"
+oa_cy_2012,OpenAlex,Citations in 2012 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2013,OpenAlex,Citations in 2013 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2014,OpenAlex,Citations in 2014 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2015,OpenAlex,Citations in 2015 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2016,OpenAlex,Citations in 2016 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2017,OpenAlex,Citations in 2017 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2018,OpenAlex,Citations in 2018 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2019,OpenAlex,Citations in 2019 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2020,OpenAlex,Citations in 2020 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2021,OpenAlex,Citations in 2021 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2022,OpenAlex,Citations in 2022 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2023,OpenAlex,Citations in 2023 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2024,OpenAlex,Citations in 2024 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2025,OpenAlex,Citations in 2025 according to OpenAlex counts_by_year (empty = none recorded)
+oa_cy_2026,OpenAlex,"Citations in 2026 according to OpenAlex counts_by_year (empty = none recorded); partial year, counted up to the retrieval date"
+pub_month,PMC,Publication month
+date_accepted,PMC article history,Date of acceptance

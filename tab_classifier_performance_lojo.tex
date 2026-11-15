@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Classification performance of the ensemble labels against the human labels in the reference set (leave-one-journal-out predictions).}
+\label{tab:classifier_performance_lojo}
+\small
+\begin{tabular}{llrrccc}
+\toprule
+Code & Category & $n$ (human) & $n$ (predicted) & Precision & Recall (95\% CI) & F1 \\
+\midrule
+F & Fully Public Repository Deposition & 122 & 113 & 0.96 & 0.89 (0.82--0.93) & 0.92 \\
+M & Mixed Public Repository + Author Request & 12 & 17 & 0.59 & 0.83 (0.55--0.95) & 0.69 \\
+P & Public Within Article/Supplement Only & 377 & 379 & 0.97 & 0.97 (0.95--0.98) & 0.97 \\
+R & Reuse of Public Third-Party Data Only & 33 & 39 & 0.74 & 0.88 (0.73--0.95) & 0.81 \\
+C & Controlled-Access Repository & 32 & 31 & 0.65 & 0.62 (0.45--0.77) & 0.63 \\
+A & Author Upon Request Only & 449 & 461 & 0.95 & 0.98 (0.96--0.99) & 0.96 \\
+N & No Data Generated/Not Applicable & 175 & 160 & 0.96 & 0.87 (0.82--0.92) & 0.91 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\footnotesize Accuracy 0.9375, Cohen's $\kappa$ 0.914, macro-F1 0.842 ($N=1200$ reference statements).
+\end{table}

@@ -1,0 +1,2 @@
+OpenAlex primary_topic (openalex_topics.jsonl.gz) was retrieved on 2026-11-08 to 2026-11-09.
+This date was recorded by the authors; the retrieval script did not write a machine-readable record (openalex_topics_meta.json) for this run.

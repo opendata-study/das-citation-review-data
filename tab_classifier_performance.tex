@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Classification performance of the ensemble labels against the human labels in the reference set (cross-validated predictions).}
+\label{tab:classifier_performance}
+\small
+\begin{tabular}{llrrccc}
+\toprule
+Code & Category & $n$ (human) & $n$ (predicted) & Precision & Recall (95\% CI) & F1 \\
+\midrule
+F & Fully Public Repository Deposition & 122 & 112 & 0.96 & 0.89 (0.82--0.93) & 0.92 \\
+M & Mixed Public Repository + Author Request & 12 & 15 & 0.60 & 0.75 (0.47--0.91) & 0.67 \\
+P & Public Within Article/Supplement Only & 377 & 380 & 0.96 & 0.97 (0.95--0.98) & 0.96 \\
+R & Reuse of Public Third-Party Data Only & 33 & 37 & 0.78 & 0.88 (0.73--0.95) & 0.83 \\
+C & Controlled-Access Repository & 32 & 33 & 0.64 & 0.66 (0.48--0.80) & 0.65 \\
+A & Author Upon Request Only & 449 & 462 & 0.95 & 0.98 (0.96--0.99) & 0.96 \\
+N & No Data Generated/Not Applicable & 175 & 161 & 0.96 & 0.88 (0.82--0.92) & 0.92 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\footnotesize Accuracy 0.9375, Cohen's $\kappa$ 0.914, macro-F1 0.844 ($N=1200$ reference statements).
+\end{table}
